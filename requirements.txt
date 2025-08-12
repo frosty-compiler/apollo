@@ -1,0 +1,44 @@
+# Main dependencies
+dspy==2.6.8
+wikipedia==1.4.0
+sentence-transformers  
+toml
+langchain-text-splitters
+langchain-huggingface
+trafilatura
+qdrant-client
+langchain-qdrant
+litellm # litellm==1.59.3
+numpy==1.26.4
+diskcache
+
+# Dependecies at Evaluation
+Wikipedia-API==0.6.0
+transformers  
+flair==0.13.0
+nltk==3.8.1
+chardet==5.2.0
+fastchat
+bert-score
+rouge-score
+scikit-learn==1.3.2
+pandas==2.1.1
+scipy==1.10.1
+tqdm
+
+# Development dependencies
+prometheus-eval
+vllm==0.7.2
+jupyter
+seaborn
+mlflow
+omegaconf
+hydra-core
+sentencex
+
+# Demo
+streamlit
+plotly
+matplotlib
+pyvis
+
