@@ -221,7 +221,7 @@ class HierarchyGenerator(BaseModule):
         self,
         lm: dspy.LM,
         results_dir: str = "HierarchyGenerator",
-        prompt_version: Optional[str] = "v5",
+        prompt_version: Optional[str] = "v8",
         prompt_name: Optional[str] = "build_hierarchy_kg_prompt",
         max_thread_num: Optional[int] = 8,
         seed: Optional[int] = None,
@@ -1187,36 +1187,14 @@ if __name__ == "__main__":
     args.dataset = "SciWiki-100"
     args.depth = 4
     args.seed = 42
-    args.jobid = [
-        # "0",
-        # "1",
-        "2",
-    ][0]
-
-    args.target_domain = [
-        "ComputerScience",
-        # "AgriBio",
-        # "Neuro",
-    ][0]
-
-    args.specific_topics = [
-        # "Carica papaya",
-        # "Dopamine hypothesis of schizophrenia",
-        # "Cyclic redundancy check",
-        # "Ensemble learning",
-        # "Linear discriminant analysis",
-        "Network time protocol",
-    ]
+    args.jobid = "0"
+    args.target_domain = "ComputerScience"
+    args.specific_topics = ["Network time protocol"]
     args.use_retriever = True
     args.top_k = 10
-
     args.max_tokens = 16000
     args.lm = "gpt-4o-mini"
-    # args.lm = "claude-3-7-sonnet"
-    # args.lm = "llama-3-3-70B"
-
     args.disable_logger = False
-
     args.tmp = "temp/"
 
     if args.disable_logger:

@@ -407,26 +407,6 @@ class Runner(Engine):
                 knowledge_graph=knowledge_graph,
                 callback_handler=callback_handler,
             )
-        if do_url_outline_mapping:
-            if outline is None:
-                outline: str = self._load_outline_from_local_fs(
-                    topic=topic,
-                    outline_local_path=os.path.join(
-                        self.article_output_dir, "apollo_gen_outline.md"
-                    ),
-                    return_as_str=True,
-                )
-            if knowledge_graph is None:
-                knowledge_graph = self._load_knowledge_graph_from_local_fs(
-                    os.path.join(
-                        self.article_output_dir,
-                        f"kg/States/kg_depth_{self.args.depth}.json",
-                    )
-                )
-            self.run_url_outline_mapping(
-                knowledge_graph=knowledge_graph,
-                outline=outline,
-            )
 
         # Stage 3: Article Generation
         draft_article: Article = None

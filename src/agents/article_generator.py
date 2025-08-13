@@ -110,7 +110,7 @@ class ArticleGenerationAgent(BaseAgent):
                     root_section_name=section_title,
                     add_hashtags=False,
                 )
-                # TODO: check how adding the topic influences retrieval
+
                 section_query = [f"{topic} {query}" for query in section_query]
                 queries_with_hashtags = article_with_outline.get_outline_as_list(
                     root_section_name=section_title,
@@ -178,7 +178,6 @@ class ArticleGenerationAgent(BaseAgent):
         article.dump_article_as_plain_text(article_path)
         logger.info(f"Saving revised article to: {article_path}")
 
-        # TODO: rm this signal after debugging is done
         if eval_factuality:
             try:
                 run_eval_factuality(

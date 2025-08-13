@@ -14,39 +14,11 @@ Here is the format of your writing:
 3. Do not include topic name itself in the outline.
 """
 
-PROMPTS[
-    "write_outline_kg_v1"
-] = """
-Based on this knowledge graph construct an outline for a Wikipedia Article that covers all the nodes and edges in the graph. The outline should be structured with headings and subheadings, and should build a comprehensive overview of the topic.
-
-Please keep the number of (h1) sections between 6 to 9. See what is relevant for a general audience that wants to know about this topic. See what it would be insighfull and give a clear overview of what the topic is about.
-
-Remember, the KG is a representation of what we know about the topic but we need to write an outline that is comprehensive and understandable for a general audience.
-
-Also in your outline, do not include an "Introduction" section, as we will instead generate a "Summary" section like in Wikipedia-pages so account for this when creating the outline.
-
-Here is the format of your writing:
-1. Use "#" Title" to indicate section title, "##" Title" to indicate subsection title, "###" Title" to indicate subsubsection title, and so on.
-2. Do not include other information.
-3. Do not include topic name itself in the outline.
-"""
 
 
 ##################################################
 #               OUTLINE REFINEMENT
 ##################################################
-
-PROMPTS[
-    "refine_outline_kg_v0"
-] = """
-You are an expert Wikipedia writer. Your task is to refine the following draft outline to meet Wikipedia standards for the topic: '{topic}'.
-
-Please ensure the outline is clear, relevant, and informative for a general audience seeking to understand the topic. Remove any unrelated sections, improve structural coherence, and organize the content according to standard Wikipedia article conventions.
-
-The final outline should include between 5 to 8 top-level (H1) sections. If the current outline already meets this requirement and is structurally sound, simply return it as is.
-
-Output the revised outline in the same format, with no additional commentary.
-"""
 
 
 PROMPTS[

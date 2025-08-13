@@ -65,35 +65,3 @@ This repository leverages multiple state-of-the-art LLMs to generate and refine 
 | Claude-3-5-Sonnet              | Fact checking               |
 | Prometheus-7b-v2.0             | Rubric scoring              |
 
-## Citation
-```
-@misc{samarinas2025factualaccuracyevaluatingcoverage,
-      title={Beyond Factual Accuracy: Evaluating Coverage of Diverse Factual Information in Long-form Text Generation}, 
-      author={Chris Samarinas and Alexander Krubner and Alireza Salemi and Youngwoo Kim and Hamed Zamani},
-      year={2025},
-      eprint={2501.03545},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2501.03545}, 
-}
-@inproceedings{shao-etal-2024-assisting,
-    title = "Assisting in Writing {W}ikipedia-like Articles From Scratch with Large Language Models",
-    author = "Shao, Yijia  and
-      Jiang, Yucheng  and
-      Kanell, Theodore  and
-      Xu, Peter  and
-      Khattab, Omar  and
-      Lam, Monica",
-    editor = "Duh, Kevin  and
-      Gomez, Helena  and
-      Bethard, Steven",
-    booktitle = "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
-    month = jun,
-    year = "2024",
-    address = "Mexico City, Mexico",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2024.naacl-long.347/",
-    doi = "10.18653/v1/2024.naacl-long.347",
-    pages = "6252--6278",
-}
-```
